@@ -1,0 +1,31 @@
+#Burlap Setup
+
+* In case of disk is full, need create new VM. Relevant steps are only: 2,3,4
+
+1. VirtualBox
+	* Download link [here](https://www.virtualbox.org/wiki/Downloads)
+	* Need [Ubuntu ISO](https://www.ubuntu.com/download/desktop)
+	* Some help [in setting up](http://www.wikihow.com/Install-VirtualBox)	
+	
+2. Setup on Ubuntu
+	* [Getting java](https://www.howtogeek.com/191427/how-to-find-out-if-java-is-installed-in-ubuntu-and-how-to-install-it/)
+	* [Alternative in case](https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098)
+	* Setting [JAVA_HOME](https://askubuntu.com/questions/459900/how-to-find-my-current-java-home-in-ubuntu)
+	* Change ```.bashrc``` as needed
+	* Had to install sublime, git, vim
+
+3. Setup maven on Ubuntu
+	* Had to do ```sudo apt-get install maven```
+	* Basically refer [to this](http://burlap.cs.brown.edu/tutorials/hgw/p1.html)
+	* Maybe had to [do this](https://maven.apache.org/install.html)
+
+4. After maven setup
+	* Clone the [git repo](https://github.com/jmacglashan/burlap)
+	* Follow above instructions
+		* ```mvn package``` must be done in same directory as pom.xml file
+	* Some failure: bad java set up
+		* Used [this resource](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-ubuntu-with-apt-get)
+		* Change ```JAVA_HOME``` accordingly in ```.bashrc``` then open new shell
+
+5. After Maven setup, example project
+	* Example [project setup](http://burlap.cs.brown.edu/tutorials/hgw/p1.html)
