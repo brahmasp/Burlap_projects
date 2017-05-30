@@ -6,10 +6,10 @@
 	* Download link [here](https://www.virtualbox.org/wiki/Downloads)
 	* Need [Ubuntu ISO](https://www.ubuntu.com/download/desktop)
 	* Some help [in setting up](http://www.wikihow.com/Install-VirtualBox)	
+	* [Alternative in case](https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098)
 	
 2. Setup on Ubuntu
 	* [Getting java](https://www.howtogeek.com/191427/how-to-find-out-if-java-is-installed-in-ubuntu-and-how-to-install-it/)
-	* [Alternative in case](https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098)
 	* Setting [JAVA_HOME](https://askubuntu.com/questions/459900/how-to-find-my-current-java-home-in-ubuntu)
 	* Change ```.bashrc``` as needed
 	* Had to install sublime, git, vim
