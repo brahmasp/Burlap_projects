@@ -16,12 +16,16 @@ public class HelloGridWorld {
 	public static void main(String[] args) {
 
 		GridWorldDomain gw = new GridWorldDomain(11,11); //11x11 grid world
-		gw.setMapToFourRooms(); //four rooms layout
-		gw.setProbSucceedTransitionDynamics(0.8); //stochastic transitions with 0.8 success rate
+		//gw.setMapToFourRooms(); //four rooms layout
+
+		//stochastic transitions with 0.8 success rate
+		//if 1.0 then transition is always successful - by agent
+		// if 0.0 then will move randomly every time regardless of agent desire
+		gw.setProbSucceedTransitionDynamics(1.0);
 		SADomain domain = gw.generateDomain(); //generate the grid world domain
 
 		//setup initial state
-		State s = new GridWorldState(new GridAgent(0, 0), new GridLocation(10, 10, "loc0"));
+		State s = new GridWorldState(new GridAgent(0, 0), new GridLocation(8, 8, "loc0"));
 
 		//create visualizer and explorer
 		Visualizer v = GridWorldVisualizer.getVisualizer(gw.getMap());
